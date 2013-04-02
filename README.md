@@ -35,5 +35,5 @@ Distributed under the MIT License, see
 for details.
 
 The underlying jars:
-Bloomberg Open API, see [http://github.com/tulos/bberg-sdk/master/LICENSE.txt](http://github.com/tulos/bberg-sdk/master/LICENSE.txt)
+Bloomberg Open API, see [http://raw.github.com/tulos/bberg-sdk/master/LICENSE.txt](http://raw.github.com/tulos/bberg-sdk/master/LICENSE.txt)
 for details.
