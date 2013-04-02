@@ -6,7 +6,4 @@
   ;; Where are the Bloomberg SDK class files?
   :filespecs [{:type :path :path "bberg-sdk-jars"}]
   :jar-exclusions [#".*\.(jar)$"]
-  :uberjar-exclusions [#".*\.(jar)$"]
-
-  :repositories [["snapshots" "http://nexus.vlan.tuloscapital.com:8081/nexus/content/repositories/snapshots/"]
-                 ["releases" "http://nexus.vlan.tuloscapital.com:8081/nexus/content/repositories/releases/"]])
+  :uberjar-exclusions [#".*\.(jar)$"])
