@@ -3,7 +3,7 @@
 echo "Unzipping jars in bberg-sdk-jars/..."
 cd bberg-sdk-jars/
 for x in *.jar; do
-    unzip -o $x;
+    unzip $x;
 done
 cd ..
 rm -rf bberg-sdk-jars/META-INF/
