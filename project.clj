@@ -6,4 +6,5 @@
   ;; Where are the Bloomberg SDK class files?
   :filespecs [{:type :path :path "bberg-sdk-jars"}]
   :jar-exclusions [#".*\.(jar)$"]
-  :uberjar-exclusions [#".*\.(jar)$"])
+  :uberjar-exclusions [#".*\.(jar)$"]
+  :checksum :ignore)
