@@ -16,7 +16,7 @@ Once these requirements are met, this is the procedure to create a new
 lo-sdk release and push it to [Clojars](http://clojars.org/tulos/bberg-sdk).
 
 1. Copy the current Bloomberg jar from your Blommberg API install into
-the `bberg-sdk-jars/` folder.
+the `input-jars/` folder.
 
 2. Adjust the version number in `project.clj` to match the Bloomberg release.
 

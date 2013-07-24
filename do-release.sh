@@ -1,20 +1,21 @@
 #!/bin/bash
 
-echo "Unzipping jars in bberg-sdk-jars/..."
-cd bberg-sdk-jars/
+file=`ls target/bberg-sdk-*-standalone.jar`
+
+rm -rf unpacked-jars/*
+echo "Unzipping jars..."
+cd input-jars/
 for x in *.jar; do
-    unzip -o $x;
+    unzip -o -d ../unpacked-jars $x;
 done
 cd ..
-rm -rf bberg-sdk-jars/META-INF/
+rm -rf unpacked-jars/META-INF/
 
 echo "Creating uberjar"
 lein uberjar
 
 echo "Creating pom.xml"
 lein pom
-
-file=`ls target/bberg-sdk-*-standalone.jar`
 
 if [[ ! -f ${file} ]]; then
     echo "Error: ${file} doesn't exist!"
